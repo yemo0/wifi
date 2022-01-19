@@ -1,0 +1,10 @@
+{
+  "appName": "WiFi Password",
+  "WiFiPageTitleOne": "WiFi密码查看",
+  "WiFiPageTitleTwo": "无Root",
+  "WiFiPageOneShare": "share",
+  "WiFiPageOneCopy": "copy",
+  "QrcodeTitle": "Wi-Fi QR code",
+  "WiFiPageOneCopySuss": "Password copied",
+  "WiFiPageNoRoot": "don't have root access"
+}
