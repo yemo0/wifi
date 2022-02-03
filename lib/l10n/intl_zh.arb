@@ -1,10 +1,22 @@
 {
   "appName": "WiFi Password",
-  "WiFiPageTitleOne": "WiFi密码查看",
-  "WiFiPageTitleTwo": "无Root",
-  "WiFiPageOneShare": "分享",
+  "WiFiPageTitleOne": "WiFi 密码",
+  "WiFiPageTitleTwo": "无 Root",
+  "WiFiPageOneQrcode": "二维码",
   "WiFiPageOneCopy": "复制",
-  "QrcodeTitle": "扫描连接WiFi",
-  "WiFiPageOneCopySuss": "密码已复制",
-  "WiFiPageNoRoot": "don't have root access"
+  "QrcodeTitle": "扫描连接 WiFi",
+  "WiFiPageOneCopySuss": "复制成功",
+  "WiFiPageNoRoot": "本功能需要Root权限，如果没有Root请使用无Root功能。",
+  "WiFiPageTitleTwoQRCode": "选择WiFi二维码",
+  "WiFiInformation": "WiFi 信息",
+  "ssid": "WiFi名称: ",
+  "psk": "WiFi密码: ",
+  "copySsid": "复制WiFi名称",
+  "copyPsk": "复制WiFi密码",
+  "copySsidAndPsk": "复制WiFi名称与密码",
+  "notFoundQrcode": "未找到WiFi信息",
+  "shiYong1": "使用说明：",
+  "shiYong2": "点击下面按钮选择WiFi二维码图片即可。",
+  "shiYong3": "WiFi二维码：",
+  "shiYong4": "系统设置 - WLAN - 点击已经连接的WiFi - WLAN二维码。"
 }

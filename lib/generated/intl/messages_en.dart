@@ -23,14 +23,33 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "QrcodeTitle": MessageLookupByLibrary.simpleMessage("Wi-Fi QR code"),
-        "WiFiPageNoRoot":
-            MessageLookupByLibrary.simpleMessage("don\'t have root access"),
+        "WiFiInformation":
+            MessageLookupByLibrary.simpleMessage("WiFi information"),
+        "WiFiPageNoRoot": MessageLookupByLibrary.simpleMessage(
+            "don\'t have root access, Please use no root"),
         "WiFiPageOneCopy": MessageLookupByLibrary.simpleMessage("copy"),
         "WiFiPageOneCopySuss":
-            MessageLookupByLibrary.simpleMessage("Password copied"),
-        "WiFiPageOneShare": MessageLookupByLibrary.simpleMessage("share"),
-        "WiFiPageTitleOne": MessageLookupByLibrary.simpleMessage("WiFi密码查看"),
-        "WiFiPageTitleTwo": MessageLookupByLibrary.simpleMessage("无Root"),
-        "appName": MessageLookupByLibrary.simpleMessage("WiFi Password")
+            MessageLookupByLibrary.simpleMessage("Copy successful"),
+        "WiFiPageOneQrcode": MessageLookupByLibrary.simpleMessage("QR code"),
+        "WiFiPageTitleOne": MessageLookupByLibrary.simpleMessage("WiFi View"),
+        "WiFiPageTitleTwo": MessageLookupByLibrary.simpleMessage("No Root"),
+        "WiFiPageTitleTwoQRCode":
+            MessageLookupByLibrary.simpleMessage("Select QR code"),
+        "appName": MessageLookupByLibrary.simpleMessage("WiFi Password"),
+        "copyPsk": MessageLookupByLibrary.simpleMessage("Copy pass"),
+        "copySsid": MessageLookupByLibrary.simpleMessage("Copy ssid"),
+        "copySsidAndPsk":
+            MessageLookupByLibrary.simpleMessage("Copy ssid & pass"),
+        "notFoundQrcode":
+            MessageLookupByLibrary.simpleMessage("QR code not found"),
+        "psk": MessageLookupByLibrary.simpleMessage("pass: "),
+        "shiYong1":
+            MessageLookupByLibrary.simpleMessage("Instructions for use："),
+        "shiYong2": MessageLookupByLibrary.simpleMessage(
+            "Just click the button below to select the WiFi QR code image。"),
+        "shiYong3": MessageLookupByLibrary.simpleMessage("WiFi QR Code："),
+        "shiYong4": MessageLookupByLibrary.simpleMessage(
+            "System settings - WLAN - Click on the connected WiFi - WLAN QR code。"),
+        "ssid": MessageLookupByLibrary.simpleMessage("ssid: ")
       };
 }

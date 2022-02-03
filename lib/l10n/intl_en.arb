@@ -1,10 +1,22 @@
 {
   "appName": "WiFi Password",
-  "WiFiPageTitleOne": "WiFi密码查看",
-  "WiFiPageTitleTwo": "无Root",
-  "WiFiPageOneShare": "share",
+  "WiFiPageTitleOne": "WiFi View",
+  "WiFiPageTitleTwo": "No Root",
+  "WiFiPageOneQrcode": "QR code",
   "WiFiPageOneCopy": "copy",
   "QrcodeTitle": "Wi-Fi QR code",
-  "WiFiPageOneCopySuss": "Password copied",
-  "WiFiPageNoRoot": "don't have root access"
+  "WiFiPageOneCopySuss": "Copy successful",
+  "WiFiPageNoRoot": "don't have root access, Please use no root",
+  "WiFiPageTitleTwoQRCode": "Select QR code",
+  "WiFiInformation": "WiFi information",
+  "ssid": "ssid: ",
+  "psk": "pass: ",
+  "copySsid": "Copy ssid",
+  "copyPsk": "Copy pass",
+  "copySsidAndPsk": "Copy ssid & pass",
+  "notFoundQrcode": "QR code not found",
+  "shiYong1": "Instructions for use：",
+  "shiYong2": "Just click the button below to select the WiFi QR code image。",
+  "shiYong3": "WiFi QR Code：",
+  "shiYong4": "System settings - WLAN - Click on the connected WiFi - WLAN QR code。"
 }

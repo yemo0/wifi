@@ -130,7 +130,9 @@ class _WiFiRootState extends State<WiFiRoot> with AutomaticKeepAliveClientMixin 
     super.initState();
   }
 
-  showQrcode(context) {
+  showQrcode(context, i) {
+    var psk = wifiList[i]['psk'] ??= "";
+    var ssid = wifiList[i]['ssid'] ??= "";
     showDialog(
         context: context,
         // barrierDismissible: true,
@@ -143,7 +145,7 @@ class _WiFiRootState extends State<WiFiRoot> with AutomaticKeepAliveClientMixin 
               width: 200,
               alignment: Alignment.center,
               child: QrImage(
-                data: 'WIFI:S:liang_5G;T:WPA;P:15896757468;H:true;;',
+                data: 'WIFI:S:'+ ssid + ';T:WPA;P:' + psk +';H:true;;',
                 version: QrVersions.auto,
                 size: 200,
                 gapless: false,
@@ -171,17 +173,17 @@ class _WiFiRootState extends State<WiFiRoot> with AutomaticKeepAliveClientMixin 
           children: [
             // A SlidableAction can have an icon and/or a label.
             SlidableAction(
-              onPressed: showQrcode,
+              onPressed: (context) => showQrcode(context, i),
               backgroundColor: Color(0xFFFE4A49),
               foregroundColor: Colors.white,
-              icon: Icons.delete,
-              label: S.of(context).WiFiPageOneShare,
+              icon: Icons.qr_code,
+              label: S.of(context).WiFiPageOneQrcode,
             ),
             SlidableAction(
               onPressed: (context) => copyPassword(context, i),
               backgroundColor: Color(0xFF21B7CA),
               foregroundColor: Colors.white,
-              icon: Icons.share,
+              icon: Icons.content_copy,
               label: S.of(context).WiFiPageOneCopy,
             ),
           ],
@@ -203,7 +205,10 @@ class _WiFiRootState extends State<WiFiRoot> with AutomaticKeepAliveClientMixin 
         );
       }
       return Center(
-        child: Text(S.of(context).WiFiPageNoRoot),
+        child: Container(
+          margin: EdgeInsets.all(20),
+          child: Text(S.of(context).WiFiPageNoRoot),
+        ),
       );
     }
 

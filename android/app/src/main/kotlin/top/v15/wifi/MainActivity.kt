@@ -1,4 +1,4 @@
-package com.example.wifi
+package top.v15.wifi
 
 import io.flutter.embedding.android.FlutterActivity
 

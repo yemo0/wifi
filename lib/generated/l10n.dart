@@ -60,31 +60,31 @@ class S {
     );
   }
 
-  /// `WiFi密码查看`
+  /// `WiFi View`
   String get WiFiPageTitleOne {
     return Intl.message(
-      'WiFi密码查看',
+      'WiFi View',
       name: 'WiFiPageTitleOne',
       desc: '',
       args: [],
     );
   }
 
-  /// `无Root`
+  /// `No Root`
   String get WiFiPageTitleTwo {
     return Intl.message(
-      '无Root',
+      'No Root',
       name: 'WiFiPageTitleTwo',
       desc: '',
       args: [],
     );
   }
 
-  /// `share`
-  String get WiFiPageOneShare {
+  /// `QR code`
+  String get WiFiPageOneQrcode {
     return Intl.message(
-      'share',
-      name: 'WiFiPageOneShare',
+      'QR code',
+      name: 'WiFiPageOneQrcode',
       desc: '',
       args: [],
     );
@@ -110,21 +110,141 @@ class S {
     );
   }
 
-  /// `Password copied`
+  /// `Copy successful`
   String get WiFiPageOneCopySuss {
     return Intl.message(
-      'Password copied',
+      'Copy successful',
       name: 'WiFiPageOneCopySuss',
       desc: '',
       args: [],
     );
   }
 
-  /// `don't have root access`
+  /// `don't have root access, Please use no root`
   String get WiFiPageNoRoot {
     return Intl.message(
-      'don\'t have root access',
+      'don\'t have root access, Please use no root',
       name: 'WiFiPageNoRoot',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select QR code`
+  String get WiFiPageTitleTwoQRCode {
+    return Intl.message(
+      'Select QR code',
+      name: 'WiFiPageTitleTwoQRCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `WiFi information`
+  String get WiFiInformation {
+    return Intl.message(
+      'WiFi information',
+      name: 'WiFiInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ssid: `
+  String get ssid {
+    return Intl.message(
+      'ssid: ',
+      name: 'ssid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `pass: `
+  String get psk {
+    return Intl.message(
+      'pass: ',
+      name: 'psk',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Copy ssid`
+  String get copySsid {
+    return Intl.message(
+      'Copy ssid',
+      name: 'copySsid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Copy pass`
+  String get copyPsk {
+    return Intl.message(
+      'Copy pass',
+      name: 'copyPsk',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Copy ssid & pass`
+  String get copySsidAndPsk {
+    return Intl.message(
+      'Copy ssid & pass',
+      name: 'copySsidAndPsk',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `QR code not found`
+  String get notFoundQrcode {
+    return Intl.message(
+      'QR code not found',
+      name: 'notFoundQrcode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Instructions for use：`
+  String get shiYong1 {
+    return Intl.message(
+      'Instructions for use：',
+      name: 'shiYong1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Just click the button below to select the WiFi QR code image。`
+  String get shiYong2 {
+    return Intl.message(
+      'Just click the button below to select the WiFi QR code image。',
+      name: 'shiYong2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `WiFi QR Code：`
+  String get shiYong3 {
+    return Intl.message(
+      'WiFi QR Code：',
+      name: 'shiYong3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `System settings - WLAN - Click on the connected WiFi - WLAN QR code。`
+  String get shiYong4 {
+    return Intl.message(
+      'System settings - WLAN - Click on the connected WiFi - WLAN QR code。',
+      name: 'shiYong4',
       desc: '',
       args: [],
     );
