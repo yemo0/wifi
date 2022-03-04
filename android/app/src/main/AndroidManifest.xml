@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="top.v15.wifi">
    <application
-        android:label="My WiFi Password"
+        android:label="WiFi Pass"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

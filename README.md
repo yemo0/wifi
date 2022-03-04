@@ -8,3 +8,7 @@ View WiFi password and generate WiFi QR code
 - app 名称
 - 复制、图标修改
 - 没有root权限情况
+
+### 1.0.1 2022-03-05 05:16:38
+- 修改android/app build.gradle 加入了ndk
+- 修改app名称为 WiFi Pass
