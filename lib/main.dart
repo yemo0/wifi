@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:wifi/common/routers.dart';
 import 'package:wifi/generated/l10n.dart';
 
 void main() {
-  // Admob
-  WidgetsFlutterBinding.ensureInitialized();
-  MobileAds.instance.initialize();
   runApp(const MyApp());
 }
 
@@ -20,63 +16,10 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
 
-  AppOpenAd? appOpenAd;
-
-  Future<void> loadAd() async {
-    await AppOpenAd.load(
-        adUnitId: "ca-app-pub-2998964302669273/8620878438",
-        request: const AdRequest(),
-        adLoadCallback: AppOpenAdLoadCallback(
-            onAdLoaded: (ad) {
-              print(ad);
-              appOpenAd = ad;
-            },
-            onAdFailedToLoad: (error) {
-              print(error);
-            }
-        ),
-        orientation: AppOpenAd.orientationPortrait
-    );
-  }
-
-  void showAd() {
-    if (appOpenAd == null) {
-      print("11");
-      loadAd();
-      return;
-    }
-    appOpenAd?.fullScreenContentCallback = FullScreenContentCallback(
-      onAdShowedFullScreenContent: (ad) {
-
-      },
-      onAdFailedToShowFullScreenContent: (ad, error) {
-        ad.dispose();
-        print("Failed to load $error");
-        appOpenAd = null;
-        loadAd();
-      },
-      onAdDismissedFullScreenContent: (ad) {
-        ad.dispose();
-        print("dismissed");
-        appOpenAd = null;
-        loadAd();
-      }
-    );
-    appOpenAd!.show();
-  }
-
-  @override
-  void didChangeDependencies() async {
-    // TODO: implement didChangeDependencies
-    super.didChangeDependencies();
-    await loadAd();
-  }
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      // builder: AutoSizeUtil.appBuilder,
+    return MaterialApp(      // builder: AutoSizeUtil.appBuilder,
       showSemanticsDebugger: false,
       debugShowCheckedModeBanner: false,
       title: 'WI-FI',

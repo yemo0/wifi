@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wifi/generated/l10n.dart';
-import 'package:wifi/pages/wifi_no_root.dart';
-import 'package:wifi/pages/wifi_root.dart';
+import 'package:wifi/view/wifi_no_root.dart';
+import 'package:wifi/view/wifi_view.dart';
 
 class Home extends StatefulWidget {
   const Home({Key ? key, required this.title}) : super (key: key);

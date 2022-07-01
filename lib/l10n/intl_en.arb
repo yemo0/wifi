@@ -1,7 +1,7 @@
 {
   "appName": "WiFi Password",
   "WiFiPageTitleOne": "WiFi View",
-  "WiFiPageTitleTwo": "No Root",
+  "WiFiPageTitleTwo": "WiFi QR code",
   "WiFiPageOneQrcode": "QR code",
   "WiFiPageOneCopy": "copy",
   "QrcodeTitle": "Wi-Fi QR code",

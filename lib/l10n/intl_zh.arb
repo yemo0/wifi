@@ -1,7 +1,7 @@
 {
   "appName": "WiFi Password",
   "WiFiPageTitleOne": "WiFi 密码",
-  "WiFiPageTitleTwo": "无 Root",
+  "WiFiPageTitleTwo": "二维码",
   "WiFiPageOneQrcode": "二维码",
   "WiFiPageOneCopy": "复制",
   "QrcodeTitle": "扫描连接 WiFi",

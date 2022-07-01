@@ -1,6 +1,7 @@
 # WiFi Password
 View WiFi password and generate WiFi QR code
-##ToDo
+
+## ToDo
 - 首次读取保存数据
 - 加入重新读取按钮
 
@@ -12,3 +13,7 @@ View WiFi password and generate WiFi QR code
 ### 1.0.1 2022-03-05 05:16:38
 - 修改android/app build.gradle 加入了ndk
 - 修改app名称为 WiFi Pass
+
+### 1.0.2 2022-06-04 01:27:56
+- 移除广告
+- 更改加载方式
